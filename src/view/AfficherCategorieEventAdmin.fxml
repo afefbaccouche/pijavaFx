@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="container" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AfficherCategorieEventAdminController">
+    
+    
+    
+    <children>
+      <Text fill="WHITE" layoutX="573.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Catégories">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="ajouterBtn" layoutX="704.0" layoutY="137.0" mnemonicParsing="false" onAction="#ajouterAction" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #00539C;" text="Ajouter" textFill="WHITE" />
+      <Button fx:id="modifierBtn" layoutX="793.0" layoutY="137.0" mnemonicParsing="false" onAction="#modifierAction" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #00539C;" text="Modifier" textFill="WHITE" />
+      <Button fx:id="supprimerBtn" layoutX="887.0" layoutY="137.0" mnemonicParsing="false" onAction="#supprimerAction" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #9B1B30;" text="Supprimer" textFill="WHITE" />
+      <ListView fx:id="categorieListView" layoutX="396.0" layoutY="206.0" onMouseClicked="#clickItemAction" prefHeight="282.0" prefWidth="564.0" />
+      <TextField fx:id="categorieText" layoutX="395.0" layoutY="137.0" prefHeight="25.0" prefWidth="299.0" promptText="Nom Catégorie" />
+    </children>
+</AnchorPane>

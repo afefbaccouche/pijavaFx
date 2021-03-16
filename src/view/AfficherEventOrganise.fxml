@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="container" prefHeight="576.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AfficherEventOrganiseController">
+   <children>
+      <Label layoutX="298.0" layoutY="44.0" text="Mes événements">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ListView fx:id="eventListView" layoutX="285.0" layoutY="149.0" prefHeight="413.0" prefWidth="757.0" />
+      <Button fx:id="modifierBtn" layoutX="823.0" layoutY="96.0" mnemonicParsing="false" onAction="#modifierAction" prefHeight="33.0" prefWidth="94.0" style="-fx-background-color: #5bc0de;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimerBtn" layoutX="923.0" layoutY="96.0" mnemonicParsing="false" onAction="#supprimerAction" prefHeight="33.0" prefWidth="94.0" style="-fx-background-color: #dc3545;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

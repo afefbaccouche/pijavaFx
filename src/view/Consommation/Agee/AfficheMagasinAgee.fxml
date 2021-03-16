@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Consommation.Agee.Magasin.AfficheMagasinAgeeController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-1.0" layoutY="40.0" prefHeight="580.0" prefWidth="781.0" styleClass="mainFxmlClass">
+         <children>
+            <VBox alignment="CENTER" layoutX="-23.0" layoutY="3.0" prefHeight="561.0" prefWidth="814.0" spacing="20.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="-23.0" AnchorPane.rightAnchor="-10.0" AnchorPane.topAnchor="3.0">
+               <children>
+                  <Text fill="#e40404" strokeType="OUTSIDE" strokeWidth="0.0" text="Magasin">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Text>
+                  <ScrollPane prefHeight="441.0" prefWidth="888.0">
+                     <content>
+                        <AnchorPane prefHeight="427.0" prefWidth="782.0">
+                           <children>
+                              <GridPane fx:id="gridMagasin" layoutX="2.0" prefHeight="369.0" prefWidth="727.0" style="-fx-border-color: black;" />
+                           </children>
+                        </AnchorPane>
+                     </content></ScrollPane>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+        
+      </AnchorPane>
+      <JFXButton fx:id="AcceuilM" layoutX="40.0" layoutY="28.0" text="Acceuil" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Consommation.Agee.AfficheProduitController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="673.0" prefWidth="744.0" styleClass="mainFxmlClass">
+         <children>
+            <Text fill="#e40404" layoutX="312.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produit">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Text>
+            <ScrollPane layoutX="23.0" layoutY="195.0">
+               <content>
+                  <AnchorPane prefHeight="355.0" prefWidth="696.0">
+                     <children>
+                        <GridPane fx:id="gridP" style="-fx-border-color: black;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <JFXButton fx:id="AcceuilP" layoutX="23.0" layoutY="14.0" text="Acceuil" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

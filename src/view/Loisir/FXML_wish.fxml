@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Loisir.FXML_wishController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="454.0" prefWidth="775.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@../client/profil.css" />
+         </stylesheets>
+         <children>
+            <Pane layoutY="-4.0" prefHeight="77.0" prefWidth="775.0" style="-fx-background-color: #3F69AA;">
+               <children>
+                  <Label fx:id="nameTxt" layoutX="296.0" layoutY="14.0" prefHeight="53.0" prefWidth="186.0" text="Wish List" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="star" fitHeight="53.0" fitWidth="56.0" layoutX="668.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../../../../../../Users/Pirateos/Desktop/Etoile-icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="star" fitHeight="53.0" fitWidth="56.0" layoutX="718.0" layoutY="29.0">
+                     <image>
+                        <Image url="@../../../../../../Users/Pirateos/Desktop/Etoile-icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="star" fitHeight="53.0" fitWidth="56.0" layoutX="681.0" layoutY="63.0">
+                     <image>
+                        <Image url="@../../../../../../Users/Pirateos/Desktop/Etoile-icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="popo" layoutX="26.0" layoutY="79.0" prefHeight="347.0" prefWidth="749.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="683.0" prefWidth="1308.0" style="-fx-background-color: #ffffcc;" stylesheets="@../article/table.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.client.ReserverCentreController">
+   <children>
+      <Label fx:id="labelCentre" layoutX="144.0" layoutY="49.0" prefHeight="37.0" prefWidth="190.0" text="Reserver centre: " textFill="#e49e05">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label layoutX="264.0" layoutY="157.0" text="Date Debut">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="254.0" layoutY="258.0" text="Nombre de jour">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="nbrJour" layoutX="589.0" layoutY="247.0" prefHeight="37.0" prefWidth="227.0" />
+      <DatePicker fx:id="dateD" layoutX="582.0" layoutY="158.0" prefHeight="39.0" prefWidth="238.0" />
+      <Label fx:id="prixCentre" layoutX="867.0" layoutY="78.0" prefHeight="27.0" prefWidth="215.0" text="prix">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="260.0" layoutY="364.0" prefHeight="27.0" prefWidth="56.0" text="Prix: ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="totalPrice" layoutX="637.0" layoutY="366.0" prefHeight="27.0" prefWidth="108.0" text="0DT">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="prixError" layoutX="591.0" layoutY="292.0" prefHeight="14.0" prefWidth="210.0" textFill="#fc0606" />
+      <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Admin/images/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="134.0" layoutX="981.0" layoutY="450.0" onMouseClicked="#reserver">
+         <image>
+            <Image url="@../../Admin/images/calendar.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="963.0" layoutY="537.0" onMouseClicked="#reserver" text="Reserver" textFill="#c66306">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

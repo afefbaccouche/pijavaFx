@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="424.0" prefWidth="137.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Toolbar.ToolbarController">
+   <children>
+      <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#AfficherProfil" prefHeight="400.0" prefWidth="160.0" styleClass="toolbar-button" text="Profil" textAlignment="CENTER">
+         <graphic>
+            <FontAwesomeIconView glyphName="USER" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="Reclamations" contentDisplay="TOP" mnemonicParsing="false" onAction="#AfficherLoisirs" prefHeight="400.0" prefWidth="160.0" styleClass="toolbar-button" text="Loisirs" textAlignment="CENTER">
+         <graphic>
+            <FontAwesomeIconView glyphName="FUTBOL_ALT" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" mnemonicParsing="false" prefHeight="400.0" prefWidth="160.0" styleClass="toolbar-button" text="Offres" textAlignment="CENTER">
+         <graphic>
+            <FontAwesomeIconView glyphName="BOOK" size="25" text="" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" mnemonicParsing="false" prefHeight="400.0" prefWidth="160.0" styleClass="toolbar-button" text="Factures" textAlignment="CENTER">
+         <graphic>
+            <FontAwesomeIconView glyphName="TABLE" size="25" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

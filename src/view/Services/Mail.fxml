@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Services.MailController">
+   <children>
+      <AnchorPane fx:id="btnSend" prefHeight="668.0" prefWidth="700.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtMail" layoutX="60.0" layoutY="147.0" prefHeight="46.0" prefWidth="585.0" visible="false" />
+            <JFXTextField fx:id="txtSubject" layoutX="55.0" layoutY="187.0" prefHeight="46.0" prefWidth="593.0" />
+            <TextArea fx:id="txtMessage" layoutX="53.0" layoutY="394.0" prefHeight="128.0" prefWidth="600.0" />
+            <Label layoutX="17.0" layoutY="93.0" prefHeight="35.0" prefWidth="75.0" text="Mail" visible="false" />
+            <Label layoutX="16.0" layoutY="131.0" prefHeight="35.0" prefWidth="60.0" text="subject" />
+            <Label layoutX="23.0" layoutY="292.0" prefHeight="35.0" prefWidth="127.0" text="Cause d'annulation" />
+            <JFXButton fx:id="envoyer" layoutX="150.0" layoutY="551.0" prefHeight="25.0" prefWidth="416.0" style="-fx-background-color: #aea5a5;" text="envoyer" textFill="WHITE" />
+            
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="3.0" layoutY="7.0" prefHeight="63.0" prefWidth="693.0" style="-fx-background-color: #F0F0F0;">
+         <children>
+            <Label layoutX="279.0" layoutY="14.0" prefHeight="35.0" prefWidth="117.0" text="Envoyer Mail " textFill="#009688">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="28.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="back" fitHeight="25.0" fitWidth="26.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pidev/images/icons8_back_25px_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

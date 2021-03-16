@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane fx:id="mainmoviespane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="1276.0" stylesheets="styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Consommation.Agee.Restaurant.DetailleRestauController">
+   <children>
+      <AnchorPane layoutX="2.0" layoutY="-6.0" prefHeight="740.0" prefWidth="1284.0" style="-fx-background-color: #E8E8E8;">
+         <children>
+            <AnchorPane layoutX="-7.0" layoutY="5.0" prefHeight="729.0" prefWidth="1285.0" styleClass="tiles">
+               <children>
+                  <ImageView fx:id="DimageRestau" fitHeight="326.0" fitWidth="516.0" layoutX="32.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" styleClass="tiles" />
+                  <AnchorPane layoutX="766.0" layoutY="89.0" prefHeight="200.0" prefWidth="420.0" styleClass="tiles">
+                     <children>
+                        <AnchorPane opacity="0.8" prefHeight="35.0" prefWidth="420.0" style="-fx-background-color: #2196F3;">
+                           <children>
+                              <Label fx:id="DnomRestau" layoutX="10.0" layoutY="4.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Line endX="400.0" layoutX="10.0" layoutY="70.0" stroke="#009688" strokeWidth="0.6" />
+                        <Line endX="400.0" layoutX="10.0" layoutY="110.0" stroke="#009688" strokeWidth="0.6" />
+                        <Line endX="400.0" layoutX="10.0" layoutY="150.0" stroke="#009688" strokeWidth="0.6" />
+                        <Line endX="400.0" layoutX="10.0" layoutY="190.0" stroke="#009688" strokeWidth="0.6" />
+                        <Label layoutX="20.0" layoutY="46.0" text="address : ">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="86.0" text="telephone :">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="126.0" text="email :">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="166.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="DaddressR" layoutX="250.0" layoutY="46.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="DtelR" layoutX="250.0" layoutY="86.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="DemailR" layoutX="250.0" layoutY="126.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="movieticketsold" layoutX="250.0" layoutY="166.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="btnReserver" alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="20.0" layoutX="836.0" layoutY="335.0" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #2196F3; -fx-background-radius: 5;" text="reserver" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" size="30" />
+                     </graphic>
+                   
+                  </JFXButton>
+                  <Pane layoutX="233.0" layoutY="379.0" prefHeight="67.0" prefWidth="202.0">
+                     <children>
+                        <Label fx:id="msg" layoutX="19.0" layoutY="38.0" prefHeight="17.0" prefWidth="162.0" />
+                        <Rating fx:id="BtnRating" />
+                     </children>
+                  </Pane>
+                  <JFXButton fx:id="btnComment" layoutX="455.0" layoutY="596.0" text="commenter" />
+                  <TextArea fx:id="commentArea" layoutX="161.0" layoutY="502.0" opacity="0.5" prefHeight="82.0" prefWidth="318.0" promptText="create your comment" />
+                  <TabPane fx:id="tabPane" layoutX="837.0" layoutY="516.0" prefHeight="138.0" prefWidth="420.0" style="-fx-border-color: #1d2026;" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Commentaire">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="614.0">
+                                 <children>
+                                    <Button fx:id="btnajout" layoutX="128.0" layoutY="521.0" prefHeight="25.0" prefWidth="88.0" text="add" />
+                                   
+                                    <JFXListView fx:id="ListComment" prefHeight="180.0" prefWidth="420.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Rating">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="415.0" prefWidth="619.0">
+                                 <children>
+                                    <Button fx:id="btnadd" layoutX="72.0" layoutY="440.0" prefHeight="25.0" prefWidth="88.0" text="add" />
+                                   
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+                  <Button fx:id="btnRetour" layoutX="76.0" layoutY="667.0" mnemonicParsing="false" text="retour" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

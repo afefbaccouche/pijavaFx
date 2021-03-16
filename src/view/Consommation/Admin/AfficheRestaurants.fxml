@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Consommation.Admin.Restaurant.AfficherRestaurantController">
+   <children>
+      <TabPane prefHeight="610.0" prefWidth="810.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Restaurant">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="0.0" prefWidth="103.0" styleClass="header" text="Liste de restaurant">
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </Label>
+                              <TableView fx:id="RestarantsTable" prefHeight="203.0" prefWidth="766.0">
+                                 <columns>
+                                    <TableColumn fx:id="idRColonne" prefWidth="66.0" text="id" />
+                                    <TableColumn fx:id="nomRColonne" prefWidth="98.33332824707031" text="nom" />
+                                    <TableColumn fx:id="addressRColonne" prefWidth="97.0" text="address" />
+                                    <TableColumn fx:id="telRColonne" prefWidth="110.33334350585938" text="telephone" />
+                                    <TableColumn fx:id="emailRColonne" prefWidth="92.99996948242188" text="email" />
+                                    <TableColumn fx:id="ImageColonne" prefWidth="164.66668701171875" text="Image" />
+                                    <TableColumn fx:id="TypeColonne" prefWidth="138.0" text="type" />
+                                 </columns>
+                              </TableView>
+                              <Pagination fx:id="pagination" prefHeight="57.0" prefWidth="770.0" />
+                              <HBox prefHeight="58.0" prefWidth="760.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="btnAjoutR" mnemonicParsing="false" prefHeight="0.0" prefWidth="240.0" text="Ajout" />
+                                    <Button fx:id="btnUpdateR" mnemonicParsing="false" prefHeight="0.0" prefWidth="240.0" text="Modifier" />
+                                    <Button fx:id="btnDelete" mnemonicParsing="false" prefHeight="0.0" prefWidth="240.0" text="supprimer" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="50.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Magasin">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0">
+                           <children>
+                              <Label styleClass="header" text="Liste de Magasin" />
+                              <TableView fx:id="MagasinTable" prefHeight="355.0" prefWidth="760.0">
+                                 <columns>
+                                    <TableColumn fx:id="idMColonne" prefWidth="144.0" text="id" />
+                                    <TableColumn fx:id="nomMColonne" prefWidth="158.0" text="nom" />
+                                    <TableColumn fx:id="addressMColonne" prefWidth="200.0" text="address" />
+                                    <TableColumn fx:id="telMColonne" prefWidth="119.0" text="telephone" />
+                                    <TableColumn fx:id="emailMColonne" prefWidth="125.0" text="email" />
+                                 </columns>
+                              </TableView>
+                              <Pagination fx:id="paginationM" prefHeight="269.0" prefWidth="760.0" />
+                              <HBox prefHeight="58.0" prefWidth="760.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="btnAjoutM" mnemonicParsing="false" prefHeight="0.0" prefWidth="240.0" text="Ajout" />
+                                    <Button fx:id="btnUpdateM" mnemonicParsing="false" prefHeight="0.0" prefWidth="240.0" text="Modifier" />
+                                    <Button fx:id="btnDeleteM" mnemonicParsing="false" prefHeight="0.0" prefWidth="240.0" text="supprimer" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="produitDeMag" mnemonicParsing="false" text="produit" />
+                                    <Button mnemonicParsing="false" text="Logout" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Produit">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="630.0" prefWidth="830.0" spacing="20.0">
+                           <children>
+                              <Label styleClass="header" text="Liste de Produit" />
+                              <TableView fx:id="ProduitTable" prefHeight="306.0" prefWidth="790.0">
+                                 <columns>
+                                    <TableColumn fx:id="idPColonne" prefWidth="79.0" text="id" />
+                                    <TableColumn fx:id="nomPColonne" prefWidth="111.0" text="nom" />
+                                    <TableColumn fx:id="prixPColonne" prefWidth="107.0" text="prix" />
+                                    <TableColumn fx:id="QuantitPColonne" prefWidth="113.0" text="quantit" />
+                                    <TableColumn fx:id="typePColonne" minWidth="0.0" prefWidth="92.0" text="type" />
+                                    <TableColumn fx:id="nomMagPColonne" prefWidth="169.0" text="nom magasin" />
+                                    <TableColumn prefWidth="118.0" text="Image" />
+                                 </columns>
+                              </TableView>
+                              <Pagination fx:id="paginationP" prefHeight="71.0" prefWidth="790.0" />
+                              <HBox prefHeight="58.0" prefWidth="760.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="btnAjoutP" mnemonicParsing="false" prefHeight="0.0" prefWidth="240.0" text="Ajout" />
+                                    <Button fx:id="btnUpdateP" mnemonicParsing="false" prefHeight="0.0" prefWidth="240.0" text="Modifier" />
+                                    <Button fx:id="btnDeleteP" mnemonicParsing="false" prefHeight="0.0" prefWidth="240.0" text="supprimer" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Logout" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

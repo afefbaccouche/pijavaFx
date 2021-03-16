@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="container" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.doctor.StatArticlesController">
+   <children>
+      <BarChart fx:id="chart" layoutX="361.0" layoutY="118.0" prefHeight="361.0" prefWidth="671.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label alignment="CENTER" layoutX="575.0" layoutY="14.0" prefHeight="35.0" prefWidth="247.0" text="Top Trois Articles" textAlignment="CENTER" textFill="#ae7477">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="58.0" prefHeight="42.0" prefWidth="693.0" text="Ce sont les trois articles les plus aimer par les agés essayez d'ajouter plus d'article de meme sujet" textFill="#56f8f3">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="256.0" layoutY="52.0" onMouseClicked="#goBack">
+         <image>
+            <Image url="@../../Admin/images/left-arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

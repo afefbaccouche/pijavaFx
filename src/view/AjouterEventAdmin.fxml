@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="container" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjouterEventAdminController">
+    <children>
+      <Text fill="WHITE" layoutX="585.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter événement">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nomEvent" layoutX="483.0" layoutY="92.0" />
+      <TextArea fx:id="description" layoutX="446.0" layoutY="141.0" prefHeight="70.0" prefWidth="293.0" />
+      <Label layoutX="355.0" layoutY="96.0" text="Nom de l'événement" textFill="WHITE" />
+      <Label layoutX="355.0" layoutY="148.0" text="Description" textFill="WHITE" />
+      <Label layoutX="355.0" layoutY="240.0" text="Date debut" textFill="WHITE" />
+      <Label layoutX="701.0" layoutY="240.0" text="Date fin" textFill="WHITE" />
+      <Label layoutX="357.0" layoutY="297.0" text="Heure debut" textFill="WHITE" />
+      <Label layoutX="694.0" layoutY="297.0" text="Heure fin" textFill="WHITE" />
+      <Label layoutX="357.0" layoutY="364.0" text="Adresse" textFill="WHITE" />
+      <Label layoutX="353.0" layoutY="437.0" text="Image" textFill="WHITE" />
+      <Label layoutX="360.0" layoutY="479.0" text="Prix" textFill="WHITE" />
+      <Label layoutX="360.0" layoutY="525.0" text="Catégorie" textFill="WHITE" />
+      <ComboBox fx:id="categorie" layoutX="438.0" layoutY="521.0" prefWidth="150.0" />
+      <TextArea fx:id="adresse" layoutX="438.0" layoutY="356.0" prefHeight="51.0" prefWidth="293.0" />
+      <TextField fx:id="prix" layoutX="424.0" layoutY="475.0" />
+      <Button fx:id="btnImage" layoutX="439.0" layoutY="430.0" mnemonicParsing="false" text="Choisir une image" />
+      <Button fx:id="btnAddEvent" layoutX="864.0" layoutY="505.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #2a73ff;" text="Ajouter Evenement" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <JFXTimePicker fx:id="heureDebut" layoutX="449.0" layoutY="293.0" />
+      <JFXTimePicker fx:id="heureFin" layoutX="769.0" layoutY="293.0" />
+      <JFXDatePicker fx:id="dateDebut" layoutX="449.0" layoutY="236.0" />
+      <JFXDatePicker fx:id="dateFin" layoutX="769.0" layoutY="236.0" />
+      <Label fx:id="imageFileLabel" layoutX="571.0" layoutY="434.0" prefHeight="17.0" prefWidth="163.0" textFill="WHITE" />
+      <Label fx:id="imageLabelInvisible" layoutX="618.0" layoutY="525.0" prefHeight="17.0" prefWidth="150.0" text="label" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="658.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manager.FXMLUpdateCentreController">
+   <children>
+      <ImageView fitHeight="658.0" fitWidth="1050.0" pickOnBounds="true">
+         <image>
+            <Image url="@bg4.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur radius="7.0" />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="109.0" layoutY="73.0" prefHeight="523.0" prefWidth="839.0" style="-fx-background-color: rgb(0,0,0,.93); -fx-background-radius: 0 50;">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#ff214f" layoutX="109.0" layoutY="165.0" promptText="Username" unFocusColor="#fefefe" />
+            <JFXTextField fx:id="email" focusColor="#ff214f" layoutX="109.0" layoutY="231.0" promptText="Email" unFocusColor="#fefefe" />
+            <JFXPasswordField fx:id="password" focusColor="#ff214f" layoutX="109.0" layoutY="299.0" promptText="Password" unFocusColor="#fefefe" />
+            <JFXTextField fx:id="name" focusColor="#ff214f" layoutX="380.0" layoutY="165.0" promptText="Name" unFocusColor="#fefefe" />
+            <JFXTextField fx:id="surname" focusColor="#ff214f" layoutX="380.0" layoutY="231.0" promptText="Surname" unFocusColor="#fefefe" />
+            <JFXTextField fx:id="phone" focusColor="#ff214f" layoutX="625.0" layoutY="231.0" promptText="Phone" unFocusColor="#fefefe" />
+            <JFXButton fx:id="image" layoutX="406.0" layoutY="365.0" onAction="#addImage" style="-fx-background-color: #64bc36; -fx-opacity: 60%;" text="Add Profile Pic" textFill="WHITE" />
+            <JFXTextField fx:id="facebook" focusColor="#ff214f" layoutX="623.0" layoutY="165.0" promptText="Facebook" unFocusColor="#fefefe" />
+            <JFXTextField fx:id="address" focusColor="#ff214f" layoutX="380.0" layoutY="299.0" promptText="Address" unFocusColor="#fefefe" />
+            <JFXButton fx:id="ajouter" layoutX="545.0" layoutY="426.0" onAction="#addUser" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #ff214f;" text="Submit" textFill="WHITE" />
+            <Circle fx:id="imageIn" layoutX="689.0" layoutY="87.0" radius="49.0" stroke="WHITE" strokeType="INSIDE" style="-fx-opacity: 90%;" />
+            <Label graphicTextGap="10.0" layoutX="187.0" layoutY="67.0" text="Register Here !" textFill="#dadada">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#dadada" glyphName="USER_PLUS" size="18" />
+               </graphic>
+            </Label>
+            <Label fx:id="login" layoutX="530.0" layoutY="468.0" onMouseClicked="#loginPage" text="Already have an account? Log In" textFill="#dadada" underline="true" />
+            <JFXPasswordField fx:id="confPassword" focusColor="#ff214f" layoutX="109.0" layoutY="358.0" promptText="Confirm Password" unFocusColor="#fefefe" />
+            <JFXComboBox fx:id="role" focusColor="#ff214f" layoutX="625.0" layoutY="299.0" prefHeight="25.0" prefWidth="135.0" promptText="Role" unFocusColor="#fefefe" />
+            <ImageView fx:id="pic" fitHeight="97.0" fitWidth="129.0" layoutX="430.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <JFXSpinner fx:id="spinner" layoutX="590.0" layoutY="414.0" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

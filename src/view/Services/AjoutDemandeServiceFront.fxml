@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Services.AjoutDemandeServiceFrontController">
+   <children>
+      <AnchorPane prefHeight="425.0" prefWidth="602.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton fx:id="btnAdd" layoutX="226.0" layoutY="309.0" prefHeight="45.0" prefWidth="157.0" style="-fx-background-color: #009688; -fx-background-radius: 10em;" text="save" textFill="#f5f4f4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="-14.0" layoutY="7.0" prefHeight="78.0" prefWidth="637.0" style="-fx-background-color: #F0F0F0;">
+               <children>
+                  <Label layoutX="230.0" layoutY="19.0" prefHeight="35.0" prefWidth="143.0" text="Ajout Demande" textFill="#009688">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="47.0" layoutY="28.0" />
+               </children>
+            </AnchorPane>
+            <JFXTextField fx:id="description" layoutX="207.0" layoutY="127.0" prefHeight="45.0" prefWidth="241.0" />
+            <Label layoutX="49.0" layoutY="228.0" prefHeight="35.0" prefWidth="74.0" text="Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="133.0" prefHeight="45.0" prefWidth="85.0" text="Description" />
+            <JFXDatePicker fx:id="dp" layoutX="207.0" layoutY="224.0" prefHeight="35.0" prefWidth="278.0" />
+            <ImageView fx:id="back" fitHeight="45.0" fitWidth="34.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../pidev/images/icons8_back_25px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

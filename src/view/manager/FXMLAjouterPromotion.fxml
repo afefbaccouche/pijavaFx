@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manager.FXMLAjouterPromotionController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="247.0" layoutY="26.0" onMouseClicked="#goBack2" prefHeight="541.0" prefWidth="788.0">
+         <children>
+            <Label fx:id="Ancien_prix" layoutX="66.0" layoutY="88.0" text="Ancien_prix" textFill="#ebe3e3">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="Reductionr" layoutX="73.0" layoutY="145.0" text="Reduction" textFill="#e8dcdc">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="Nouveau_prix" layoutX="63.0" layoutY="203.0" text="Nouveau_prix" textFill="#fcf3f3">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Button layoutX="434.0" layoutY="386.0" mnemonicParsing="false" onAction="#add" text="Ajouter Promotion">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <ImageView fx:id="pic" fitHeight="142.0" fitWidth="160.0" layoutX="557.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/hiring.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Datedd" layoutX="72.0" layoutY="261.0" text="Date_debut" textFill="#f8f1f1">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="Dateff" layoutX="72.0" layoutY="323.0" text="Date_fin" textFill="#fcf2f2">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <DatePicker fx:id="DateD" layoutX="186.0" layoutY="257.0" />
+            <DatePicker fx:id="dateF" layoutX="186.0" layoutY="319.0" />
+            <Label fx:id="Nouveau_prix" layoutX="227.0" layoutY="203.0" text="0DT" textFill="#eeecec" />
+            <Label fx:id="prixError" layoutX="136.0" layoutY="354.0" />
+            <Label fx:id="labelCentre" layoutX="424.0" layoutY="49.0" text="faza centre" textFill="#f8f0f0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="Date_fin" layoutX="190.0" layoutY="354.0" prefHeight="17.0" prefWidth="164.0" />
+            <Label fx:id="Date_debut" layoutX="190.0" layoutY="290.0" prefHeight="17.0" prefWidth="164.0" />
+            <Label fx:id="Reductionlab" layoutX="214.0" layoutY="175.0" prefHeight="17.0" prefWidth="149.0" />
+            <Label fx:id="cntr" layoutX="373.0" layoutY="346.0" prefHeight="33.0" prefWidth="213.0" />
+            <Slider fx:id="slider" layoutX="189.0" layoutY="146.0" />
+            <Label fx:id="spinnerValLabel" layoutX="345.0" layoutY="145.0" text="0%" textFill="#f8efef" />
+            <ImageView fitHeight="46.0" fitWidth="39.0" layoutX="32.0" layoutY="27.0" onMouseClicked="#goBack2">
+               <image>
+                  <Image url="@../../Admin/images/left-arrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

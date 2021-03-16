@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manager.FXMLCentrelController">
+   <children>
+      <AnchorPane layoutX="255.0" layoutY="-9.0" prefHeight="589.0" prefWidth="804.0">
+         <children>
+            <Button layoutX="654.0" layoutY="272.0" mnemonicParsing="false" onAction="#updateCentre" prefHeight="39.0" prefWidth="131.0" style="-fx-background-color: #193366;" text="Modifier" textFill="#f5eaea">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="658.0" layoutY="330.0" mnemonicParsing="false" onAction="#deleteCentre" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #660000;" text="Supprimer" textFill="#eee7e7">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <TableView fx:id="centreTable" layoutX="3.0" layoutY="196.0" prefHeight="366.0" prefWidth="620.0" />
+            <Button layoutX="655.0" layoutY="226.0" mnemonicParsing="false" onAction="#addNew" style="-fx-background-color: #193366;" text="Ajouter centre" textFill="#eee9e9">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="639.0" layoutY="494.0" mnemonicParsing="false" onAction="#GererPromotion" prefHeight="39.0" prefWidth="175.0" style="-fx-background-color: #193366;" text="Ajouter Promotion" textFill="#fff9f9">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <TextField fx:id="searchInput" layoutX="11.0" layoutY="128.0" prefHeight="41.0" prefWidth="465.0" promptText="search..." />
+            <Button layoutX="500.0" layoutY="128.0" mnemonicParsing="false" onAction="#searchCentre" style="-fx-background-color: #00b300;" text="Search" textFill="#fcf3f3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="634.0" layoutY="434.0" mnemonicParsing="false" onAction="#gererPromotion" prefHeight="39.0" prefWidth="178.0" style="-fx-background-color: #193366;" text="Gerer Promotion" textFill="#eeebeb">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Separator layoutX="626.0" layoutY="399.0" prefHeight="1.0" prefWidth="203.0" style="-fx-background-color: #004d4d;" />
+            <Button layoutX="714.0" layoutY="27.0" mnemonicParsing="false" onAction="#logOut" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #00061a;" text="Logout" textFill="#fcf2f2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

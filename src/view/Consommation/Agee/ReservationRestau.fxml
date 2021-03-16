@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Consommation.Agee.Restaurant.ReservationRestauController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="13.0" layoutY="61.0" prefHeight="372.0" prefWidth="650.0" style="-fx-background-color: TRANSPARENT;">
+         <children>
+            <AnchorPane layoutX="193.0" layoutY="-61.0" prefHeight="513.0" prefWidth="472.0" style="-fx-background-color: #f7f7f7;">
+               <children>
+                  <Text fill="#222222" layoutX="104.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue, souhaitez vous réserver une table?" textAlignment="JUSTIFY" wrappingWidth="142.7490234375">
+                     <font>
+                        <Font name="SansSerif Bold" size="11.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="61.0" layoutY="257.0" prefHeight="224.0" prefWidth="372.0" style="-fx-background-color: #fff; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #dadada;">
+                     <children>
+                        <JFXTextField fx:id="nombre" focusColor="#ff214f" layoutX="207.0" layoutY="43.0" prefHeight="25.0" prefWidth="143.0" promptText="Nombre de Personnes" unFocusColor="#dadada" />
+                        <JFXDatePicker fx:id="date" defaultColor="#2189ff" layoutX="23.0" layoutY="93.0" prefHeight="25.0" prefWidth="143.0" promptText="jj/mm/aaaa" />
+                        <JFXComboBox fx:id="description" focusColor="#ff214f" layoutX="23.0" layoutY="35.0" prefHeight="32.0" prefWidth="143.0" promptText="Aucune Occasion" unFocusColor="#dadada" />
+                        <FontAwesomeIconView fill="#2189ff" glyphName="TAG" layoutX="10.0" layoutY="58.0" wrappingWidth="16.0" />
+                        <FontAwesomeIconView fill="#2189ff" glyphName="USERS" layoutX="191.0" layoutY="60.0" />
+                        <JFXTimePicker fx:id="heure" defaultColor="#2189ff" layoutX="208.0" layoutY="90.0" prefHeight="25.0" prefWidth="143.0" promptText="--:--" />
+                        <JFXTextField fx:id="aunomde" focusColor="#ff214f" layoutX="25.0" layoutY="159.0" prefHeight="25.0" prefWidth="143.0" promptText="Au Nom de :" unFocusColor="#dadada" />
+                        <FontAwesomeIconView fill="#2189ff" glyphName="USER" layoutX="12.0" layoutY="175.0" />
+                        <JFXButton fx:id="reserver" layoutX="243.0" layoutY="163.0" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #2189ff; -fx-border-color: #2189ff; -fx-border-radius: 25;" text="reserve" textFill="WHITE">
+                           <font>
+                              <Font name="SansSerif Bold" size="11.0" />
+                           </font>
+                        </JFXButton>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" layoutX="252.0" layoutY="179.0" />
+                        <Label fx:id="idRestauR" layoutX="21.0" layoutY="14.0" text="Label" visible="false" />
+                     </children>
+                  </AnchorPane>
+                  <FontAwesomeIconView fill="#2189ff" glyphName="CUTLERY" layoutX="77.0" layoutY="62.0" size="25" wrappingWidth="24.428579032421112" />
+                  <ImageView fx:id="imageReserv" fitHeight="164.0" fitWidth="395.0" layoutX="50.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="btnAcc" layoutX="381.0" layoutY="28.0" mnemonicParsing="false" text="Accueil" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-16.0" layoutY="-61.0" prefHeight="513.0" prefWidth="209.0" style="-fx-background-color: #242124; -fx-border-color: BLACK;">
+               <children>
+                  <AnchorPane layoutX="11.0" layoutY="282.0" prefHeight="190.0" prefWidth="172.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Label layoutY="37.0" prefHeight="17.0" prefWidth="61.0" text="Address :" textFill="#f7f7f7">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="63.0" text="Phone :" textFill="#f7f7f7">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1.0" layoutY="87.0" text="Email :" textFill="#f7f7f7">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="addressRestau" layoutX="61.0" layoutY="35.0" prefHeight="25.0" prefWidth="118.0" text="Adress" textFill="#ff214f" />
+                        <Label fx:id="PhoneRestau" layoutX="61.0" layoutY="63.0" prefHeight="17.0" prefWidth="118.0" text="Phone" textFill="#ff214f" />
+                        <Label fx:id="emailRestau" layoutX="61.0" layoutY="84.0" prefHeight="25.0" prefWidth="118.0" text="Email" textFill="#ff214f" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="FACEBOOK" layoutX="79.0" layoutY="152.0" size="18" />
+                        <JFXButton fx:id="fcbRestau" ellipsisString="" layoutX="74.0" layoutY="133.0" text=" " />
+                     </children>
+                  </AnchorPane>
+                  <Circle fx:id="photoRestau" fill="WHITE" layoutX="100.0" layoutY="129.0" radius="58.0" stroke="#f7f7f7" strokeLineCap="ROUND" strokeType="OUTSIDE" />
+                  <ImageView fx:id="imageRR" fitHeight="129.0" fitWidth="143.0" layoutX="33.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="nameRestau" ellipsisString="" layoutX="41.0" layoutY="221.0" prefHeight="17.0" prefWidth="118.0" text="Name Etablissement" textAlignment="RIGHT" textFill="#f7f7f7" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

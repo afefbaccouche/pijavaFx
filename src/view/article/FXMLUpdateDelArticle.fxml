@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="containeP" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.article.FXMLUpdateDelArticleController">
+   <children>
+      <HBox alignment="CENTER" layoutX="783.0" layoutY="31.0" prefHeight="25.0" prefWidth="597.0" spacing="20.0" />
+      <AnchorPane fx:id="container" layoutX="274.0" layoutY="141.0" prefHeight="536.0" prefWidth="749.0">
+         <children>
+            <Button layoutX="863.0" layoutY="213.0" mnemonicParsing="false" onAction="#updateArticle" prefHeight="47.0" prefWidth="147.0" style="-fx-background-color: #193366;" text="Modifier" textFill="#f8f3f3">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Button layoutX="859.0" layoutY="293.0" mnemonicParsing="false" onAction="#deleteArticle" prefHeight="47.0" prefWidth="157.0" style="-fx-background-color: #660000;" text="Supprimer" textFill="#f5ebeb">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <TableView fx:id="articlesTable" layoutX="82.0" layoutY="72.0" prefHeight="368.0" prefWidth="739.0" style="-fx-background-color: #02030A;&quot;;" />
+            <Button layoutX="334.0" layoutY="473.0" mnemonicParsing="false" onAction="#voirStatistique" prefHeight="47.0" prefWidth="242.0" style="-fx-background-color: #00b300;" text="statistiques" textFill="#f5efef">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <AnchorPane fx:id="container" layoutX="510.0" layoutY="3.0" prefHeight="91.0" prefWidth="105.0" />
+            <Button layoutX="863.0" layoutY="131.0" mnemonicParsing="false" onAction="#addNew" prefHeight="47.0" prefWidth="145.0" style="-fx-background-color: #193366;" text="Ajouter" textFill="#e2e7e8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="82.0" layoutY="39.0" mnemonicParsing="false" onAction="#showMaladies" prefHeight="37.0" prefWidth="201.0" text="Maladies">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="671.0" layoutY="20.0" prefHeight="54.0" prefWidth="317.0" text="Hello doctor" textFill="#fff6f6">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="1228.0" layoutY="55.0" mnemonicParsing="false" onAction="#logOut" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #00061a;" text="Logout" textFill="#fcf2f2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

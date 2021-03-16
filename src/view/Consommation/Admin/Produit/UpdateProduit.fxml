@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Consommation.Admin.Produit.UpdateProduitController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="28.0" layoutY="20.0" prefHeight="600.0" prefWidth="800.0" spacing="20.0">
+         <children>
+            <Label fx:id="headerLabel" styleClass="header" text="modifier Produit">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="428.0" prefWidth="760.0" spacing="20.0">
+               <children>
+                  <GridPane prefHeight="424.0" prefWidth="367.0">
+                     <children>
+                        <Label text="Nom de Produit" />
+                        <Label prefHeight="86.0" prefWidth="177.0" text="prix" GridPane.rowIndex="1" />
+                        <Label text="quantite" GridPane.rowIndex="2" />
+                        <TextField fx:id="nomProduit" GridPane.columnIndex="1" />
+                        <TextField fx:id="prixProduit" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="QuantProduit" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="type" GridPane.rowIndex="3" />
+                        <TextField fx:id="typeProduit" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Magasin" GridPane.rowIndex="4" />
+                        <Label fx:id="magProduit" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="177.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="167.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <ImageView fx:id="imageView" fitHeight="185.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button maxWidth="170.0" minWidth="170.0" mnemonicParsing="false" prefWidth="170.0" text="Change Image" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnSaveUpP" mnemonicParsing="false" text="Save" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

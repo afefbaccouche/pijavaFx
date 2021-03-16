@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="716.0" prefWidth="958.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Consommation.Agee.Magasin.DetailleMagasinController">
+   <children>
+      <AnchorPane layoutX="248.0" layoutY="-3.0" prefHeight="722.0" prefWidth="734.0">
+         <children>
+            <AnchorPane layoutX="104.0" layoutY="404.0" prefHeight="144.0" prefWidth="420.0" styleClass="tiles">
+               <children>
+                  <AnchorPane prefHeight="35.0" prefWidth="420.0" style="-fx-background-color: #2196F3;">
+                     <children>
+                        <Label fx:id="DnomMag" layoutX="10.0" layoutY="4.0" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="400.0" layoutX="10.0" layoutY="70.0" stroke="#009688" strokeWidth="0.6" />
+                  <Line endX="400.0" layoutX="10.0" layoutY="110.0" stroke="#009688" strokeWidth="0.6" />
+                  <Line endX="400.0" layoutX="10.0" layoutY="150.0" stroke="#009688" strokeWidth="0.6" />
+                  <Label layoutX="20.0" layoutY="46.0" text="address : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="86.0" text="telephone :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="126.0" text="email :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DaddressMag" layoutX="250.0" layoutY="46.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DtelMag" layoutX="250.0" layoutY="86.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DemailMag" layoutX="250.0" layoutY="126.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="DimageM" fitHeight="350.0" fitWidth="581.0" layoutX="44.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <JFXButton fx:id="AcceuilMD" layoutX="44.0" layoutY="22.0" text="Acceuil" />
+   </children>
+</AnchorPane>

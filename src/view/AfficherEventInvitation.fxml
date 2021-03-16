@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" fx:id="container" prefHeight="576.0" prefWidth="1050.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.AfficherEventInvitationController">
+   <children>
+      <javafx.scene.layout.VBox layoutY="-1.0" />
+      <Text layoutX="326.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mes invitations :">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listViewInvit" layoutX="305.0" layoutY="126.0" prefHeight="417.0" prefWidth="708.0" />
+   </children>
+</AnchorPane>

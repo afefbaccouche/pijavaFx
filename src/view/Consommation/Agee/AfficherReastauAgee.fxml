@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Consommation.Agee.Restaurant.AfficherReastauAgeeController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-8.0" layoutY="90.0" prefHeight="464.0" prefWidth="973.0" styleClass="mainFxmlClass">
+         <children>
+            <VBox alignment="CENTER" layoutY="-55.0" prefHeight="574.0" prefWidth="973.0" spacing="20.0" AnchorPane.bottomAnchor="-55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-55.0">
+               <children>
+                  <Text fill="#e40404" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant">
+                     <font>
+                        <Font size="42.0" />
+                     </font>
+                  </Text>
+                  <ScrollPane prefHeight="395.0" prefWidth="1010.0">
+                     <content>
+                        <AnchorPane prefHeight="388.0" prefWidth="921.0">
+                           <children>
+                              <GridPane fx:id="gridRestau" style="-fx-border-color: black;" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="46.0" prefWidth="421.0" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <stylesheets>
+            <URL value="@../Admin/volunteer.css" />
+         </stylesheets>
+      </AnchorPane>
+      <JFXButton fx:id="AcceuilR" layoutX="32.0" layoutY="14.0" text="Acceuil" />
+   </children>
+</AnchorPane>
